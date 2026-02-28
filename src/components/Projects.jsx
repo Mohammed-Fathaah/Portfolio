@@ -6,14 +6,14 @@ const projects = [
         description:"Full Stack project using React & Django with Razorpay integration.",
         tech:"React,Django,PostgreSQL",
         live:"",
-        code:""
+        code:"https://github.com/Mohammed-Fathaah/Game_Account_Trading_Platform"
     },
     {
         title:"Portfolio Website",
         description:"Personal portfolio built with React,Tailwind & Framer Motion.",
         tech:"React,Tailwind",
         live:"",
-        code:""
+        code:"https://github.com/Mohammed-Fathaah/Portfolio"
     }
 ];
 
