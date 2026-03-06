@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 
 function ThemeToggle(){
     const[dark,setDark] = useState(()=>{
-        return localStorage.getItem("theme") === "light";
+        return localStorage.getItem("theme") === "dark";
     });
 
     useEffect(()=>{
@@ -19,7 +19,7 @@ function ThemeToggle(){
 
     return (
         <button onClick={()=>setDark(!dark)}
-        className="px-4 py-2  bg-gray-800 text-white rounded-lg flex">
+        className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-base bg-gray-800 text-white rounded-lg flex">
         {dark ? "Light Mode" : "Dark Mode"}
         </button>
     );
