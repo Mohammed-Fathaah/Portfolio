@@ -1,7 +1,7 @@
 import ThemeToggle from "./ThemeToggle";
 function Navbar(){
     return (
-        <nav className="fixed w-full top-0 justify-between items-center px-2 md:px-10 py-4 bg-white dark:bg-black shadow z-40">
+        <nav className="fixed w-full top-0 justify-between items-center px-6 md:px-10 py-4 bg-white dark:bg-black shadow z-40">
 
          <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
             <h1 className="font-bold text-lg md:text-xl"><span className="text-gray-800 dark:text-white">Mohammed</span><span className="text-purple-500 dark:text-purple-500">Fathaah</span></h1>
@@ -12,7 +12,7 @@ function Navbar(){
                 <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
                 <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
             </div>
-           <div className="flex items-center">
+           <div className="flex items-center gap-3">
             <ThemeToggle />
            </div> 
          </div>
