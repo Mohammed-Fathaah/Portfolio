@@ -13,7 +13,6 @@ function App() {
     <div className="bg-white dark:bg-black text-black dark:text-white">
       <ScrollProgress />
       <Navbar />
-      <ThemeToggle />
       <Hero />
       <About />
       <Skills />

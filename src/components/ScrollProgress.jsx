@@ -4,9 +4,11 @@ function ScrollProgress(){
     const [scroll,setScroll]=useState(0);
 
     const handleScroll = () => {
-        const totalHeight = document.getElement.scrollHeight - document.getElement.clientHeight;
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
         const scrollPosition = window.scrollY;
+        console.log(scrollPosition);
+        
         setScroll((scrollPosition/totalHeight)*100);
     };
 
@@ -16,7 +18,7 @@ function ScrollProgress(){
     },[]);
 
     return (
-        <div className="fixed top-0 left-0 h-1 bg-blue-500 z-50" style={{ width:`${scroll}%`}} />
+        <div className="fixed top-0 left-0 h-1 bg-blue-500 z-50 transition-all duration-300" style={{ width:`${scroll}%`}} />
     );
 }
 

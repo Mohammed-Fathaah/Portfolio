@@ -54,7 +54,7 @@ function Skills(){
                 transition={{ duration:0.5,delay:index*0.05 }}
                 className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg text-center hover:scale-105 hover:shadow-blue-500/40 transition-all duration-300 cursor-pointer">
 
-                    <div className="text-4xl mb-4 text-blue-500">{skill.icon}</div>
+                    <div className="text-4xl mb-4 text-blue-500 flex justify-center">{skill.icon}</div>
                     <p className="font-semibold">{skill.name}</p>
                 </motion.div>
             ))}
