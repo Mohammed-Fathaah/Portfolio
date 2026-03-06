@@ -19,7 +19,7 @@ function ThemeToggle(){
 
     return (
         <button onClick={()=>setDark(!dark)}
-        className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-base bg-gray-800 text-white rounded-lg">
+        className="px-1 py-1 text-sm md:px-4 md:py-2 md:text-base bg-gray-800 text-white rounded-lg">
         {dark ? "Light Mode" : "Dark Mode"}
         </button>
     );
